@@ -1,7 +1,7 @@
 package com.spring.microservices.dairyfactoryinventoryservice.web.mappers;
 
 import com.spring.microservices.dairyfactoryinventoryservice.domain.ButterInventory;
-import com.spring.microservices.dairyfactoryinventoryservice.web.model.ButterInventoryDto;
+import com.spring.microservices.model.inventory.ButterInventoryDto;
 import org.mapstruct.Mapper;
 
 @Mapper(uses = {DateMapper.class})

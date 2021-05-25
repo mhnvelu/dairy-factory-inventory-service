@@ -2,7 +2,7 @@ package com.spring.microservices.dairyfactoryinventoryservice.web.controllers;
 
 import com.spring.microservices.dairyfactoryinventoryservice.repositories.ButterInventoryRepository;
 import com.spring.microservices.dairyfactoryinventoryservice.web.mappers.ButterInventoryMapper;
-import com.spring.microservices.dairyfactoryinventoryservice.web.model.ButterInventoryDto;
+import com.spring.microservices.model.inventory.ButterInventoryDto;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;

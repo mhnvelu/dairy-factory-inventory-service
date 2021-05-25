@@ -2,15 +2,15 @@ package com.spring.microservices.dairyfactoryinventoryservice.web.mappers;
 
 import com.spring.microservices.dairyfactoryinventoryservice.domain.ButterInventory;
 import com.spring.microservices.dairyfactoryinventoryservice.domain.ButterInventory.ButterInventoryBuilder;
-import com.spring.microservices.dairyfactoryinventoryservice.web.model.ButterInventoryDto;
-import com.spring.microservices.dairyfactoryinventoryservice.web.model.ButterInventoryDto.ButterInventoryDtoBuilder;
+import com.spring.microservices.model.inventory.ButterInventoryDto;
+import com.spring.microservices.model.inventory.ButterInventoryDto.ButterInventoryDtoBuilder;
 import javax.annotation.processing.Generated;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-05-21T14:02:32+0100",
+    date = "2021-05-25T14:49:55+0100",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 14.0.1 (AdoptOpenJDK)"
 )
 @Component

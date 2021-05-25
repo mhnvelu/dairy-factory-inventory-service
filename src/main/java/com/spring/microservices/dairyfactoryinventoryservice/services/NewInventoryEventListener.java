@@ -1,7 +1,7 @@
 package com.spring.microservices.dairyfactoryinventoryservice.services;
 
-import com.spring.microservices.common.events.ButterDtoV2;
-import com.spring.microservices.common.events.NewInventoryEvent;
+import com.spring.microservices.model.v2.ButterDtoV2;
+import com.spring.microservices.model.events.NewInventoryEvent;
 import com.spring.microservices.dairyfactoryinventoryservice.config.JmsConfig;
 import com.spring.microservices.dairyfactoryinventoryservice.domain.ButterInventory;
 import com.spring.microservices.dairyfactoryinventoryservice.repositories.ButterInventoryRepository;
