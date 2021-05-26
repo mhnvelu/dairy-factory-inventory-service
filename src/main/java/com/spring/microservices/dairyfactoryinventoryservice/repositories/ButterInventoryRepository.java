@@ -9,4 +9,6 @@ import java.util.UUID;
 public interface ButterInventoryRepository extends JpaRepository<ButterInventory, UUID> {
 
     List<ButterInventory> findAllByButterId(UUID butterId);
+
+    List<ButterInventory> findAllByUpc(String upc);
 }
