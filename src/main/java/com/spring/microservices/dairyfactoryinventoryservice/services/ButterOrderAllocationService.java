@@ -5,4 +5,6 @@ import com.spring.microservices.model.ButterOrderDto;
 public interface ButterOrderAllocationService {
 
     boolean allocateOrder(ButterOrderDto butterOrderDto);
+
+    void deAllocateOrder(ButterOrderDto butterOrderDto);
 }

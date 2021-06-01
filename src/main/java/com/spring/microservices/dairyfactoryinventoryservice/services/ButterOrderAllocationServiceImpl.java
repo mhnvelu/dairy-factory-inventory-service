@@ -40,6 +40,16 @@ public class ButterOrderAllocationServiceImpl implements ButterOrderAllocationSe
         return totalOrdered.get() == totalAllocated.get();
     }
 
+    @Override
+    public void deAllocateOrder(ButterOrderDto butterOrderDto) {
+        butterOrderDto.getButterOrderLines().forEach(butterOrderLineDto -> {
+            ButterInventory butterInventory =
+                    ButterInventory.builder().butterId(butterOrderLineDto.getButterId()).upc(butterOrderLineDto.getUpc())
+                            .quantityOnHand(butterOrderLineDto.getQuantityAllocated()).build();
+            butterInventoryRepository.save(butterInventory);
+        });
+    }
+
     private void allocateButterOrderLine(ButterOrderLineDto butterOrderLine) {
         List<ButterInventory> butterInventoryList = butterInventoryRepository.findAllByUpc(butterOrderLine.getUpc());
 
