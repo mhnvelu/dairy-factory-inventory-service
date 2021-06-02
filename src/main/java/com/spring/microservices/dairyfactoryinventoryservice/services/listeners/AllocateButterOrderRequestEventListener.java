@@ -33,6 +33,7 @@ public class AllocateButterOrderRequestEventListener {
             } else {
                 allocateButterOrderResponseEventBuilder.pendingInventory(false);
             }
+            allocateButterOrderResponseEventBuilder.allocationError(false);
         } catch (Exception e) {
             log.error("Allocation failed for order id : " + orderId);
             allocateButterOrderResponseEventBuilder.allocationError(true);
